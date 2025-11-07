@@ -36,7 +36,7 @@ A landing page deve conter **pelo menos** as seguintes seções:
 
 Para realizar esta atividade, você deve consultar a **página oficial do curso**:
 
-🔗 **Link oficial:** [https://diatinf.ifrn.edu.br/cursos/tecnologia-em-analise-e-desenvolvimento-de-sistemas/](https://diatinf.ifrn.edu.br/cursos/tecnologia-em-analise-e-desenvolvimento-de-sistemas/)
+🔗 **Link oficial:** [Página do curso TADS - IFRN](https://diatinf.ifrn.edu.br/cursos/tecnologia-em-analise-e-desenvolvimento-de-sistemas/)
 
 **Importante:** Utilize informações oficiais e atualizadas do site. Certifique-se de ler com atenção todas as seções disponíveis na página oficial para extrair o conteúdo necessário.
 
@@ -219,10 +219,19 @@ Para realizar esta atividade, você deve consultar a **página oficial do curso*
     box-sizing: border-box;
 }
 
+/* CSS Custom Properties (Variáveis) */
+:root {
+    --primary-color: #1a472a;
+    --secondary-color: #ff6b35;
+    --light-bg: #f8f9fa;
+    --text-color: #333;
+    --text-secondary: #555;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: var(--text-color);
 }
 
 .container {
@@ -233,7 +242,7 @@ body {
 
 /* Header e Navegação */
 header {
-    background-color: #1a472a;
+    background-color: var(--primary-color);
     color: white;
     padding: 1rem 0;
     position: fixed;
@@ -269,7 +278,7 @@ header h1 {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #1a472a 0%, #2d7a4d 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, #2d7a4d 100%);
     color: white;
     padding: 150px 20px 100px;
     text-align: center;
@@ -290,7 +299,7 @@ header h1 {
 
 .btn-cta {
     display: inline-block;
-    background-color: #ff6b35;
+    background-color: var(--secondary-color);
     color: white;
     padding: 15px 40px;
     text-decoration: none;
@@ -311,14 +320,14 @@ header h1 {
 }
 
 .bg-light {
-    background-color: #f8f9fa;
+    background-color: var(--light-bg);
 }
 
 .section h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: #1a472a;
+    color: var(--primary-color);
     position: relative;
 }
 
@@ -327,7 +336,7 @@ header h1 {
     display: block;
     width: 80px;
     height: 4px;
-    background-color: #ff6b35;
+    background-color: var(--secondary-color);
     margin: 20px auto 0;
     border-radius: 2px;
 }
@@ -348,7 +357,7 @@ header h1 {
 }
 
 .info-box h3 {
-    color: #1a472a;
+    color: var(--primary-color);
     margin-bottom: 15px;
     font-size: 1.5rem;
 }
@@ -369,14 +378,14 @@ header h1 {
 }
 
 .content-card h3 {
-    color: #1a472a;
+    color: var(--primary-color);
     margin-bottom: 15px;
     font-size: 1.3rem;
 }
 
 .content-card ul {
     list-style-position: inside;
-    color: #555;
+    color: var(--text-secondary);
 }
 
 .content-card ul li {
@@ -400,11 +409,11 @@ header h1 {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    border-left: 5px solid #1a472a;
+    border-left: 5px solid var(--primary-color);
 }
 
 .atuacao-card h3 {
-    color: #1a472a;
+    color: var(--primary-color);
     margin-bottom: 20px;
     font-size: 1.4rem;
 }
@@ -423,7 +432,7 @@ header h1 {
     content: '✓';
     position: absolute;
     left: 0;
-    color: #ff6b35;
+    color: var(--secondary-color);
     font-weight: bold;
 }
 
@@ -446,14 +455,14 @@ header h1 {
 }
 
 .ficha-table th {
-    background-color: #1a472a;
+    background-color: var(--primary-color);
     color: white;
     font-weight: bold;
     width: 40%;
 }
 
 .ficha-table td {
-    color: #555;
+    color: var(--text-secondary);
 }
 
 .ficha-table tr:last-child th,
@@ -463,7 +472,7 @@ header h1 {
 
 /* Footer */
 footer {
-    background-color: #1a472a;
+    background-color: var(--primary-color);
     color: white;
     padding: 40px 20px;
     text-align: center;
@@ -601,12 +610,13 @@ footer p {
 
 ## 🎨 Dicas de Design
 
-1. **Paleta de Cores**: Use as cores institucionais do IFRN (verde escuro #1a472a como cor principal)
+1. **Paleta de Cores**: Use as cores institucionais do IFRN (recomenda-se definir variáveis CSS como `--primary-color: #1a472a` para facilitar a manutenção)
 2. **Tipografia**: Escolha fontes legíveis e profissionais
 3. **Imagens**: Se possível, adicione imagens relacionadas ao curso ou ao campus
 4. **Espaçamento**: Use espaçamentos generosos para melhorar a legibilidade
 5. **Hierarquia Visual**: Use tamanhos de fonte e cores para criar hierarquia clara
 6. **Call-to-Action**: Destaque botões ou links importantes com cores contrastantes
+7. **Variáveis CSS**: Utilize CSS custom properties (variáveis) para manter consistência e facilitar alterações futuras
 
 ---
 
