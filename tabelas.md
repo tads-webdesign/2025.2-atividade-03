@@ -148,7 +148,7 @@ td ul li {
 - [x] **Copie o código CSS** fornecido acima para o arquivo `disciplinas.css`
 - [x] **Abra o arquivo HTML** em seu navegador para visualizar a tabela
 - [x] **Experimente modificar** as cores, tamanhos e estilos para personalizar sua tabela
-- [] **Adicione as disciplinas**: matemática discreta, programação de computadores , e sistemas digitais
+- [x] **Adicione as disciplinas**: matemática discreta, programação de computadores , e sistemas digitais
 
 ## Desafios Adicionais (Opcional)
 

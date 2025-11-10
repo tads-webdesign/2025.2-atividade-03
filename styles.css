@@ -1,3 +1,4 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -5,133 +6,140 @@
 }
 
 body {
+    background: #f7f7f7;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    color: #333;
     padding: 20px;
-    line-height: 1.6;
 }
 
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* CONTAINER */
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-.container h1 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 30px;
-    font-size: 2.5em;
-}
-
-/* Estilo do Card */
+/* CARD */
 .card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 14px rgba(0, 0, 0, 0.15);
 }
 
-/* Header do Card */
+/* CABEÇALHO COLORIDO */
 .card-header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 20px;
+    color: #fff;
     text-align: center;
+    padding: 20px;
 }
 
-.card-header h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
+.wd-card .card-header {
+    background: linear-gradient(135deg, #667eea, #764ba2);
 }
 
-.card-header .professores {
-    font-size: 1.1em;
-    font-style: italic;
-    opacity: 0.9;
+.md-card .card-header {
+    background: linear-gradient(135deg, #00ccc2, #00a0a0);
 }
 
-/* Conteúdo do Card */
+.pc-card .card-header {
+    background: linear-gradient(135deg, #ea6666, #be0000);
+}
+
+.sd-card .card-header {
+    background: linear-gradient(135deg, #c7d431, #aebf00);
+}
+
 .card-content {
-    padding: 25px;
+    padding: 20px;
 }
 
-.card-content h3 {
-    color: #667eea;
+h3 {
     margin-top: 15px;
     margin-bottom: 10px;
-    font-size: 1.3em;
 }
 
-.card-content p {
-    color: #555;
-    margin-bottom: 15px;
+/* CORES DAS DISCIPLINAS */
+.wd {
+    color: #667eea;
 }
 
-.card-content ul {
-    list-style: none;
-    padding-left: 0;
+.md {
+    color: #00ccc2;
 }
 
-.card-content ul li {
-    background-color: #f0f0f0;
-    padding: 8px 12px;
-    margin-bottom: 8px;
-    border-left: 4px solid #667eea;
-    border-radius: 4px;
+.pc {
+    color: #be0000;
 }
 
+.sd {
+    color: #aebf00;
+}
+
+/* TECNOLOGIAS */
 .tecnologias li {
     display: inline-block;
-    background-color: #667eea;
-    color: white;
-    padding: 6px 15px;
+    background: #f3f3f3;
+    color: #555;
+    padding: 8px 14px;
     margin: 5px;
-    border-radius: 20px;
-    border-left: none;
-    font-size: 0.9em;
+    border-left: 4px solid transparent;
+    border-radius: 6px;
+    font-weight: 600;
 }
 
-/* Rodapé do Card */
+.wd-card .tecnologias li {
+    border-color: #667eea;
+}
+
+.md-card .tecnologias li {
+    border-color: #00ccc2;
+}
+
+.pc-card .tecnologias li {
+    border-color: #be0000;
+}
+
+.sd-card .tecnologias li {
+    border-color: #aebf00;
+}
+
+/* RODAPÉ */
 .card-footer {
-    background-color: #f9f9f9;
+    background: #fafafa;
+    border-top: 2px solid #eee;
     padding: 20px;
-    border-top: 2px solid #e0e0e0;
 }
 
 .card-footer h3 {
-    color: #333;
     margin-bottom: 10px;
-    font-size: 1.2em;
 }
 
-.card-footer p {
-    color: #666;
-    margin-bottom: 8px;
-}
-
-.card-footer strong {
+/* DIAS COLORIDOS */
+.dia.wd {
     color: #667eea;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .container h1 {
-        font-size: 2em;
-    }
-    
-    .card-header h2 {
-        font-size: 1.5em;
-    }
-    
-    .tecnologias li {
-        display: block;
-        margin: 5px 0;
-    }
+.dia.md {
+    color: #00ccc2;
+}
+
+.dia.pc {
+    color: #be0000;
+}
+
+.dia.sd {
+    color: #aebf00;
 }
