@@ -44,7 +44,7 @@ Para realizar esta atividade, você deve consultar a **página oficial do curso*
 
 ## 💻 Estrutura Sugerida da Landing Page
 
-### Exemplo de Estrutura HTML
+### Exemplo de Estrutura HTML `landingpage.html`
 
 ```html
 <!DOCTYPE html>
@@ -53,7 +53,7 @@ Para realizar esta atividade, você deve consultar a **página oficial do curso*
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tecnologia em Análise e Desenvolvimento de Sistemas - IFRN</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="landingpage.css">
 </head>
 <body>
     <!-- Header/Navegação -->
@@ -209,7 +209,7 @@ Para realizar esta atividade, você deve consultar a **página oficial do curso*
 </html>
 ```
 
-### Exemplo de Estilização CSS
+### Exemplo de Estilização CSS `landingpage.css`
 
 ```css
 /* Reset e configurações básicas */
