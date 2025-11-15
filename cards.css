@@ -1,4 +1,3 @@
-/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -18,13 +17,13 @@ h1 {
     color: #333;
 }
 
-/* CONTAINER */
+
 .container {
     max-width: 1000px;
     margin: 0 auto;
 }
 
-/* CARD */
+
 .card {
     background: #fff;
     border-radius: 12px;
@@ -39,7 +38,7 @@ h1 {
     box-shadow: 0 8px 14px rgba(0, 0, 0, 0.15);
 }
 
-/* CABEÇALHO COLORIDO */
+
 .card-header {
     color: #fff;
     text-align: center;
@@ -71,7 +70,7 @@ h3 {
     margin-bottom: 10px;
 }
 
-/* CORES DAS DISCIPLINAS */
+
 .wd {
     color: #667eea;
 }
@@ -88,7 +87,7 @@ h3 {
     color: #aebf00;
 }
 
-/* TECNOLOGIAS */
+
 .tecnologias li {
     display: inline-block;
     background: #f3f3f3;
@@ -116,7 +115,7 @@ h3 {
     border-color: #aebf00;
 }
 
-/* RODAPÉ */
+
 .card-footer {
     background: #fafafa;
     border-top: 2px solid #eee;
@@ -127,7 +126,7 @@ h3 {
     margin-bottom: 10px;
 }
 
-/* DIAS COLORIDOS */
+
 .dia.wd {
     color: #667eea;
 }
